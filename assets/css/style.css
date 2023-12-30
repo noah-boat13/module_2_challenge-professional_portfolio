@@ -1,9 +1,8 @@
-
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #2f676bf0;
 }
 
 header nav ul {
@@ -11,18 +10,24 @@ header nav ul {
 }
 
 header nav ul li {
+    background-color: #ffffff;
+    padding: 10px;
     display: inline-block;
 }
 
 .banner {
     position: relative;
     display: inline-block;
+    margin-bottom: 20px;
+    
 }
 
 .banner img {
     display: block;
-    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
     height: auto;
+    width: auto/9;
 }
 
 .banner-text-overlay {
@@ -35,20 +40,76 @@ header nav ul li {
     color: white;
 }
 
-.sections {
-    display: flex;
-    height: auto;
-}
-
 .sidebar-header {
+    display: flex;
     width: 200px;
     padding: 20px;
     box-sizing: border-box;
+    border-right: 4px solid black;
+    justify-content: end;
 }
 
-.content {
+.about-me {
+    display: flex;
+    height: auto;
+    align-items: top;
+    padding-bottom: 20px;
+}
+
+.about-me-content {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    border-left: 1px solid black;
+    border-left: 4px solid black;
+}
+
+.about-me-content ul {
+    list-style: none;
+}
+
+.work {
+    display: flex;
+    height: auto;
+    align-items: top;
+    padding-bottom: 20px;
+}
+
+.work-links {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 4px solid black;
+}
+
+.work-links ul {
+    list-style: none;
+}
+
+.work-links ul li img {
+    border: 4px solid #2f676bf0;
+}
+
+.contact-me {
+    display: flex;
+}
+
+.contact-links {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 4px solid black;
+}
+
+.contact-links ul li {
+    display: inline-block;
+}
+
+#name {
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #0d1e1c;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
