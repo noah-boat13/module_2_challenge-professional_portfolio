@@ -1,3 +1,4 @@
+/* Header element selector/ creates a flexbox container for header + navbar */
 header {
     display: flex;
     justify-content: space-between;
@@ -5,20 +6,24 @@ header {
     background-color: #2f676bf0;
 }
 
+/* Removes bullet points from navbar icons */
 header nav ul {
     list-style: none;
 }
 
+/* formats navbar to display side by side with a gap inbetween each icon */
 header nav ul li {
     background-color: #0d1e1c;
     padding: 10px;
     display: inline-block;
 }
 
+/* determines navbar icon text color */
 header nav a {
     color: #33e9d7ea;
 }
 
+/* Sets a flexbox container for banner class */
 .banner {
     position: relative;
     display: inline-block;
@@ -26,14 +31,16 @@ header nav a {
     
 }
 
+/* Formats banner image */
 .banner img {
     display: block;
     object-fit: cover;
     max-width: 100%;
     height: auto;
-    width: auto/9;
+    width: 100%;
 }
 
+/* formats the subtitle overlay on top of banner image */
 .banner-text-overlay {
     position: absolute;
     bottom: 0;
@@ -44,6 +51,7 @@ header nav a {
     color: white;
 }
 
+/* Formats all sidebar header elements for webpage */
 .sidebar-header {
     display: flex;
     width: 200px;
@@ -53,6 +61,7 @@ header nav a {
     justify-content: end;
 }
 
+/* Sets a flexbox container for about me class */
 .about-me {
     display: flex;
     height: auto;
@@ -60,6 +69,7 @@ header nav a {
     padding-bottom: 20px;
 }
 
+/* Formats about me content/paragraphs */
 .about-me-content {
     flex: 1;
     padding: 20px;
@@ -67,10 +77,12 @@ header nav a {
     border-left: 4px solid black;
 }
 
+/* Removes bullet points */
 .about-me-content ul {
     list-style: none;
 }
 
+/* Sets a flexbox container for work class */
 .work {
     display: flex;
     height: auto;
@@ -78,6 +90,7 @@ header nav a {
     padding-bottom: 20px;
 }
 
+/* formats work links section */
 .work-links {
     flex: 1;
     padding: 20px;
@@ -85,6 +98,7 @@ header nav a {
     border-left: 4px solid black;
 }
 
+/* formats work link icons */
 .work-links ul {
     list-style: none;
     display: flex;
@@ -94,30 +108,29 @@ header nav a {
     align-items: stretch;
     gap: 10px;
 }
-/* 
-.work-links ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-} */
 
+/* add border to each work link icon */
 .work-links ul li img {
     border: 4px solid #2f676bf0;
 }
 
+/* adds a hover annimation to work link icons */
 .work-links ul li img:hover {
     border: 8px solid #33e9d7ea;
 }
 
+/* adds a shadow effect when icons are clicked */
 .work-links ul li img:active {
     box-shadow: -5px -5px 5px 5px #2f676bf0;
 }
 
+/* Sets a flexbox container for contact me class */
 .contact-me {
     display: flex;
+    align-content: baseline;
 }
 
+/* formats contact me section */
 .contact-links {
     flex: 1;
     padding: 20px;
@@ -125,10 +138,12 @@ header nav a {
     border-left: 4px solid black;
 }
 
+/* displays contact links side by side */
 .contact-links ul li {
     display: inline-block;
 }
 
+/* formats my name withing page header */
 #name {
     box-sizing: border-box;
     color: #ffffff;
@@ -138,3 +153,24 @@ header nav a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* Extra/unused code */
+
+/* .main_project {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.other_projects {
+    display: flex;
+    gap: 10px;
+} */
+
+/* 
+.work-links ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+} */
